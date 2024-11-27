@@ -193,3 +193,15 @@ bar {
 
 exec --no-startup-id xrandr --output HDMI-1-1 --same-as eDP-1
 exec --no-startup-id xrandr --output HDMI-1-1 --mode 1920x1080 --same-as eDP-1
+exec --no-startup-id ~/.config/scripts/set-default-input.sh
+
+
+# Increase input volume by 5%
+bindsym Page_Up exec --no-startup-id ~/.config/scripts/change-input-volume.sh 5%
+# Decrease input volume by 5%
+bindsym Page_Down exec --no-startup-id ~/.config/scripts/change-input-volume.sh -5%
+
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
