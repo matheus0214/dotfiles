@@ -188,7 +188,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         # status_command i3status
-        position top
+        # position top
         status_command i3blocks -c /home/$USER/.config/i3blocks/i3blocks.conf
 }
 
@@ -208,9 +208,9 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-for_window [class=".*"] border pixel 4
-gaps inner 8
-gaps outer 8
+# for_window [class=".*"] border pixel 4
+# gaps inner 8
+# gaps outer 8
 
 # Display Wallpaper
 exec_always feh --bg-fill /home/$USER/.config/i3/wallpaper.jpg
