@@ -27,3 +27,20 @@ auto-format = true
 [[language]]
 name = "json"
 language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "go"
+scope = "source.go"
+injection-regex = "go"
+file-types = ["go"]
+roots = ["Gopkg.toml", "go.mod"]
+auto-format = true
+comment-token = "//"
+language-servers = [ { name = "gopls" }, { name = "golangci-lint-langserver" }]
+indent = { tab-width = 4, unit = "\t" }
+formatter = { command = "gofmt" }
+
+[language-server.gopls.config]
+"formatting.gofumpt" = true
+"formatting.imports" = true
+
