@@ -1,0 +1,12 @@
+theme = "boo_berry"
+
+[editor]
+bufferline = "always"
+line-number = "relative"
+cursorline=true
+
+[keys.normal]
+S-l = ":buffer-next"
+S-h = ":buffer-previous"
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+

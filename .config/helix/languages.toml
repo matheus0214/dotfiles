@@ -1,0 +1,7 @@
+[[language]]
+name = "c"
+scope = "source.c"
+file-types = ["c"] # TODO: ["h"]
+comment-token = "//"
+auto-format = true
+formatter = { command = "clang-format"}
