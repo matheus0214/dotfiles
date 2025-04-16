@@ -1,8 +1,0 @@
-[opener]
-edit = [
-    { run = '${EDITOR:-hx} "$@"', desc = "$EDITOR", block = true, for = "unix" },
-]
-
-[manager]
-ratio = [1, 4, 3]
-chooser = true
