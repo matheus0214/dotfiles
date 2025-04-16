@@ -11,7 +11,7 @@ map("n", "tn", "<cmd>:BufferLineCycleNext<cr>", opts)
 map("n", "tp", "<cmd>:BufferLineCyclePrev<cr>", opts)
 
 -- tree explorer
-map("n", "<leader>e", "<cmd>:Neotree toggle position=left<cr>", opts)
+map("n", "<leader>e", "<cmd>:Neotree toggle position=right<cr>", opts)
 
 -- rewrites
 vim.keymap.set("n", "<leader>wh", "<C-w>h", opts)
