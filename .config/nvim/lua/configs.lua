@@ -14,9 +14,9 @@ require("lualine").setup{}
 
 require("neo-tree").setup({
   window = {
-    position = "left",
+    position = "bottom",
     width = 40,
-    height = "100%",
+    height = "40%",
   }
 })
 
