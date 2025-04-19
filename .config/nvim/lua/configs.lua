@@ -1,6 +1,3 @@
-
-require("lualine").setup{}
-
 require("neo-tree").setup({
   window = {
     position = "bottom",
