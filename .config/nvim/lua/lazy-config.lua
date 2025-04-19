@@ -42,5 +42,10 @@ require("lazy").setup({
         "saadparwaiz1/cmp_luasnip",
         "onsails/lspkind.nvim"
       }
-    }
+    },
+    {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+    {"stevearc/conform.nvim"},
+    {"jay-babu/mason-null-ls.nvim", event = {"BufReadPre", "BufNewFile" }, dependencies = { "nvimtools/none-ls.nvim"} },
+    {"mfussenegger/nvim-lint"},
+    {"folke/noice.nvim"}
 })

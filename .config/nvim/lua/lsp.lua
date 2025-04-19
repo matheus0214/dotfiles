@@ -8,7 +8,7 @@ local lspkind = require("lspkind")
 -- Setup Mason
 mason.setup()
 mason_lspconfig.setup({
-  ensure_installed = { "gopls" },
+  ensure_installed = { "gopls", "clangd", "biome", "ts_ls" },
 })
 
 -- Setup capabilities for nvim-cmp
@@ -30,11 +30,6 @@ cmp.setup({
       mode = "symbol_text", -- "symbol" or "text" or "symbol_text"
       maxwidth = 50,        -- truncate long entries
       ellipsis_char = "...",
-      -- menu = {
-      --   buffer = "[Buf]",
-      --   nvim_lsp = "[LSP]",
-      --   luasnip = "[Snip]",
-      -- },
     }),
   },
   snippet = {
