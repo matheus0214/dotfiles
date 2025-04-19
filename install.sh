@@ -18,6 +18,7 @@ rm nvim-linux-x86_64.tar.gz
 
 sudo apt-get install ripgrep -y
 sudo apt install xclip -y
+sudo apt install bear -y
 sudo apt install stow -y
 
 stow .
