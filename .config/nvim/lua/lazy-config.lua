@@ -21,7 +21,6 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	{"nvim-telescope/telescope.nvim"},
 	{"folke/tokyonight.nvim"},
-	{"akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons"},
 	{"nvim-neo-tree/neo-tree.nvim", branch = "v3.x",
   		dependencies = {
 		    "nvim-lua/plenary.nvim",
@@ -29,22 +28,13 @@ require("lazy").setup({
 	  	},
 		lazy = false,
 	},
-    {"neovim/nvim-lspconfig"},
-    {"williamboman/mason.nvim", build = ":MasonUpdate", config = true},
-    {"williamboman/mason-lspconfig.nvim"},
-    {"Saghen/blink.cmp", dependencies = "rafamadriz/friendly-snippets"},
     {"hrsh7th/nvim-cmp", event = "InsertEnter",dependencies = {
-        "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
-        "L3MON4D3/LuaSnip",
-        "saadparwaiz1/cmp_luasnip",
-        "onsails/lspkind.nvim"
       }
     },
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
     {"stevearc/conform.nvim"},
-    {"jay-babu/mason-null-ls.nvim", event = {"BufReadPre", "BufNewFile" }, dependencies = { "nvimtools/none-ls.nvim"} },
-    {"mfussenegger/nvim-lint"},
+    {"jay-babu/mason-null-ls.nvim", event = {"BufReadPre", "BufNewFile" }, dependencies = { "williamboman/mason.nvim", "nvimtools/none-ls.nvim"} },
     {"folke/noice.nvim"}
 })

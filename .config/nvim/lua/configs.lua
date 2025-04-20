@@ -1,9 +1,25 @@
+local cmp = require("cmp")
+require("mason").setup()
+
 require("neo-tree").setup({
   window = {
     position = "bottom",
     width = 40,
     height = "40%",
   }
+})
+
+cmp.setup({
+  mapping = cmp.mapping.preset.insert({
+    ["<C-Space>"] = cmp.mapping.complete(),
+    ["<CR>"] = cmp.mapping.confirm({ select = true }),
+    ["<Tab>"] = cmp.mapping.select_next_item(),
+    ["<S-Tab>"] = cmp.mapping.select_prev_item(),
+  }),
+  sources = {
+    { name = "path" },
+    { name = "buffer" },
+  },
 })
 
 require("nvim-treesitter.configs").setup{
@@ -21,15 +37,6 @@ require("conform").setup{
     format_on_save = true
 }
 
-require("mason-null-ls").setup({
-    ensure_installed = { "goimports", "gofumpt", "staticcheck", "clang-format", "cpplint", "biome"}
-})
-
-require('lint').linters_by_ft = {
-  go = {'staticcheck'},
-  typescript = {"biomejs"},
-  javascript = {"biomejs"},
-  c = {"cpplint"}
-}
 require("noice").setup{}
-vim.cmd('colorscheme tokyonight')
+
+vim.cmd('colorscheme tokyonight-night')
