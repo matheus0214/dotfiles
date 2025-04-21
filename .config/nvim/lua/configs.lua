@@ -39,4 +39,4 @@ require("conform").setup{
 
 require("noice").setup{}
 
-vim.cmd('colorscheme tokyonight-night')
+vim.cmd('colorscheme habamax')

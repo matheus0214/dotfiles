@@ -20,7 +20,6 @@ vim.g.maplocalleader = "\\"
 
 require("lazy").setup({
 	{"nvim-telescope/telescope.nvim"},
-	{"folke/tokyonight.nvim"},
 	{"nvim-neo-tree/neo-tree.nvim", branch = "v3.x",
   		dependencies = {
 		    "nvim-lua/plenary.nvim",
