@@ -15,9 +15,20 @@ map("n", "<leader>df", "<cmd>:lua vim.diagnostic.open_float()<cr>", opts)
 map("n", "<leader>e", "<cmd>:Neotree toggle position=bottom<cr>", opts)
 
 -- rewrites
-vim.keymap.set("n", "<leader>wh", "<C-w>h", opts)
-vim.keymap.set("n", "<leader>wl", "<C-w>l", opts) 
+map("n", "<leader>wh", "<C-w>h", opts)
+map("n", "<leader>wl", "<C-w>l", opts) 
 
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR><Esc>", { desc = "Clear search highlight" })
+map("n", "<Esc>", "<cmd>nohlsearch<CR><Esc>", { desc = "Clear search highlight" })
 
---vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
+-- resize
+map("n", "<C-Up>", "<cmd>resize+2<cr>")
+map("n", "<C-Down>", "<cmd>resize-2<cr>")
+map("n", "<C-Right>", "<cmd>vertical resize-2<cr>")
+map("n", "<C-Left>", "<cmd>vertical resize+2<cr>")
+
+-- bindings
+map("n", "<leader>w", "<cmd>w!<cr>")
+map("n", "<leader>q", "<cmd>q!<cr>")
+map("n", "<leader>c", "<cmd>bd<cr>")
+map("n", "<leader>s", "<cmd>vsplit<cr>")
+map("n", "<leader>h", "<cmd>split<cr>")
