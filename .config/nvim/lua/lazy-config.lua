@@ -28,12 +28,22 @@ require("lazy").setup({
 		lazy = false,
 	},
     {"hrsh7th/nvim-cmp", event = "InsertEnter",dependencies = {
-        "hrsh7th/cmp-buffer",
-        "hrsh7th/cmp-path",
-      }
-    },
+         "hrsh7th/cmp-nvim-lsp",
+         "hrsh7th/cmp-buffer",
+         "hrsh7th/cmp-path",
+         "L3MON4D3/LuaSnip",
+         "saadparwaiz1/cmp_luasnip",
+         "onsails/lspkind.nvim"
+       }
+     },
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
     {"stevearc/conform.nvim"},
-    {"jay-babu/mason-null-ls.nvim", event = {"BufReadPre", "BufNewFile" }, dependencies = { "williamboman/mason.nvim", "nvimtools/none-ls.nvim"} },
-    {"folke/noice.nvim"}
+    {"folke/noice.nvim"},
+    {"neovim/nvim-lspconfig"},
+    {"williamboman/mason.nvim", build = ":MasonUpdate", config = true},
+    {"williamboman/mason-lspconfig.nvim"},
+    {"jay-babu/mason-null-ls.nvim", event = {"BufReadPre", "BufNewFile" }, dependencies = { "nvimtools/none-ls.nvim"} },
+    {"mfussenegger/nvim-lint"},
+    {"olimorris/onedarkpro.nvim"},
+    {"nvim-lualine/lualine.nvim"}
 })

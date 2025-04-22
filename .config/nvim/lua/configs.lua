@@ -1,5 +1,6 @@
-local cmp = require("cmp")
 require("mason").setup()
+
+require('lualine').setup()
 
 require("neo-tree").setup({
   window = {
@@ -7,19 +8,6 @@ require("neo-tree").setup({
     width = 40,
     height = "40%",
   }
-})
-
-cmp.setup({
-  mapping = cmp.mapping.preset.insert({
-    ["<C-Space>"] = cmp.mapping.complete(),
-    ["<CR>"] = cmp.mapping.confirm({ select = true }),
-    ["<Tab>"] = cmp.mapping.select_next_item(),
-    ["<S-Tab>"] = cmp.mapping.select_prev_item(),
-  }),
-  sources = {
-    { name = "path" },
-    { name = "buffer" },
-  },
 })
 
 require("nvim-treesitter.configs").setup{
@@ -30,13 +18,22 @@ require("conform").setup{
     auto_install = true,
     formatters_by_ft = {
         go = {"goimports", "gofmt", "gofumpt"},
+        c = {"clang_format"},
         typescript = {"biome"},
-        javascript = {"biome"},
-        c = {"clang_format"}
+        javascript = {"biome"}
     },
     format_on_save = true
 }
 
 require("noice").setup{}
-
-vim.cmd('colorscheme habamax')
+require("mason-null-ls").setup({
+     ensure_installed = { "goimports", "gofumpt", "staticcheck", "clang-format", "cpplint", "biome"}
+ })
+ 
+ require('lint').linters_by_ft = {
+   go = {'staticcheck'},
+   typescript = {"biomejs"},
+   javascript = {"biomejs"},
+   c = {"cpplint"}
+ }
+vim.cmd('colorscheme onedark_vivid')
