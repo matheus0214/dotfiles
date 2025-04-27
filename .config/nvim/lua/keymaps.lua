@@ -2,11 +2,11 @@ local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 -- telescope
-map("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-map("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
-map("n", "<leader>b", "<cmd>Telescope buffers<cr>", opts)
-map("n", "<leader>s", "<cmd>Telescope lsp_document_symbols<cr>", opts)
-map("n", "<leader>d", "<cmd>Telescope diagnostics<cr>", opts)
+map("n", "<leader>f", "<cmd>Telescope find_files theme=dropdown<cr>", opts)
+map("n", "<leader>g", "<cmd>Telescope live_grep theme=dropdown<cr>", opts)
+map("n", "<leader>b", "<cmd>Telescope buffers theme=dropdown<cr>", opts)
+map("n", "<leader>s", "<cmd>Telescope lsp_document_symbols theme=dropdown<cr>", opts)
+map("n", "<leader>d", "<cmd>Telescope diagnostics theme=dropdown<cr>", opts)
 map("n", "<leader>df", "<cmd>:lua vim.diagnostic.open_float()<cr>", opts)
 
 -- lsp
@@ -14,6 +14,7 @@ map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 map("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
 map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
 map("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
+map("n", "<leader>a", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
 
 -- tree explorer
 map("n", "<leader>e", "<cmd>:Neotree toggle position=left<cr>", opts)

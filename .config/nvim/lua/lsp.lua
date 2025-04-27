@@ -8,8 +8,9 @@ local lspconfig = require("lspconfig")
  -- Setup Mason
  mason.setup()
  mason_lspconfig.setup({
-   ensure_installed = { "gopls", "clangd", "biome", "ts_ls" },
+   ensure_installed = { "gopls", "biome", "ts_ls" },
  })
+-- "clangd", 
  
  -- Setup capabilities for nvim-cmp
  local capabilities = require("cmp_nvim_lsp").default_capabilities()

@@ -1,6 +1,6 @@
 require("mason").setup()
 
-require('lualine').setup()
+require('lualine').setup({ options = { theme = "horizon" }})
 
 require("neo-tree").setup({
   window = {
@@ -18,7 +18,7 @@ require("conform").setup{
     auto_install = true,
     formatters_by_ft = {
         go = {"goimports", "gofmt", "gofumpt"},
-        c = {"clang_format"},
+        -- c = {"clang_format"},
         typescript = {"biome"},
         javascript = {"biome"}
     },
@@ -34,6 +34,6 @@ require("mason-null-ls").setup({
    go = {'staticcheck'},
    typescript = {"biomejs"},
    javascript = {"biomejs"},
-   c = {"cpplint"}
+   -- c = {"cpplint"}
  }
-vim.cmd('colorscheme onedark_vivid')
+vim.cmd('colorscheme rose-pine')

@@ -44,6 +44,6 @@ require("lazy").setup({
     {"williamboman/mason-lspconfig.nvim"},
     {"jay-babu/mason-null-ls.nvim", event = {"BufReadPre", "BufNewFile" }, dependencies = { "nvimtools/none-ls.nvim"} },
     {"mfussenegger/nvim-lint"},
-    {"olimorris/onedarkpro.nvim"},
+    {"rose-pine/neovim"},
     {"nvim-lualine/lualine.nvim"}
 })
