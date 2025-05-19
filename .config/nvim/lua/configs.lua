@@ -1,6 +1,6 @@
 require("mason").setup()
 
-require('lualine').setup({ options = { theme = "horizon" }})
+require('lualine').setup({ options = { theme = "palenight" }})
 
 require("neo-tree").setup({
   window = {
@@ -36,4 +36,4 @@ require("mason-null-ls").setup({
    javascript = {"biomejs"},
    -- c = {"cpplint"}
  }
-vim.cmd('colorscheme rose-pine')
+vim.cmd('colorscheme habamax')
