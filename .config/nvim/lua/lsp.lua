@@ -6,10 +6,10 @@ local lspconfig = require("lspconfig")
  local lspkind = require("lspkind")
  
  -- Setup Mason
- mason.setup()
- mason_lspconfig.setup({
-   ensure_installed = { "gopls", "biome", "ts_ls" },
- })
+mason.setup()
+mason_lspconfig.setup({
+   ensure_installed = { "biome", "ts_ls" },
+})
 -- "clangd", 
  
  -- Setup capabilities for nvim-cmp
