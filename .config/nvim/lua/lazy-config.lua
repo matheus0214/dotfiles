@@ -46,5 +46,6 @@ require("lazy").setup({
     {"mfussenegger/nvim-lint"},
     {"nvim-lualine/lualine.nvim"},
     {"xiyaowong/transparent.nvim"},
-    {"nvim-tree/nvim-web-devicons"}
+    {"nvim-tree/nvim-web-devicons"},
+    {"catppuccin/nvim"}
 })
