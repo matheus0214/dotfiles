@@ -1,11 +1,5 @@
 require("mason").setup()
 
-require("lualine").setup({
-    options = {
-        theme = "codedark"
-    }
-})
-
 require("neo-tree").setup()
 
 require("nvim-treesitter.configs").setup{
@@ -30,4 +24,4 @@ require('lint').linters_by_ft = {
    javascript = {"biomejs"},
 }
 
-vim.cmd('colorscheme catppuccin')
+vim.cmd('colorscheme tokyonight-night')

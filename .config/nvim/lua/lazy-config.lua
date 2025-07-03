@@ -46,6 +46,6 @@ require("lazy").setup({
     {"nvim-lualine/lualine.nvim"},
     {"xiyaowong/transparent.nvim"},
     {"nvim-tree/nvim-web-devicons"},
-    {"catppuccin/nvim"},
+    {"folke/tokyonight.nvim"},
     {"romgrk/barbar.nvim"}
 })
