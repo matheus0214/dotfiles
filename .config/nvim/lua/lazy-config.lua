@@ -38,7 +38,6 @@ require("lazy").setup({
      },
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
     {"stevearc/conform.nvim"},
-    {"folke/noice.nvim"},
     {"neovim/nvim-lspconfig"},
     {"williamboman/mason.nvim", build = ":MasonUpdate", config = true},
     {"williamboman/mason-lspconfig.nvim"},

@@ -21,7 +21,6 @@ require("conform").setup{
     format_on_save = true
 }
 
-require("noice").setup{}
 require("mason-null-ls").setup({
      ensure_installed = { "biome"}
 })
