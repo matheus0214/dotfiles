@@ -36,6 +36,9 @@ map("n", "<C-Left>", "<cmd>vertical resize+2<cr>")
 -- bindings
 map("n", "<leader>w", "<cmd>w!<cr>")
 map("n", "<leader>q", "<cmd>q!<cr>")
-map("n", "<leader>c", "<cmd>bd<cr>")
+map("n", "<leader>c", "<cmd>BufferClose<cr>")
 map("n", "<leader>vs", "<cmd>vsplit<cr>")
 map("n", "<leader>vh", "<cmd>split<cr>")
+
+map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
+map('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
