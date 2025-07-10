@@ -1,4 +1,5 @@
 require("mason").setup()
+require("minimaline").setup({})
 
 require("neo-tree").setup()
 
@@ -24,4 +25,4 @@ require('lint').linters_by_ft = {
    javascript = {"biomejs"},
 }
 
-vim.cmd('colorscheme tokyonight-night')
+-- vim.cmd('colorscheme tokyonight-night')
