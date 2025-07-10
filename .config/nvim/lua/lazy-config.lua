@@ -45,5 +45,6 @@ require("lazy").setup({
     {"mfussenegger/nvim-lint"},
     {"xiyaowong/transparent.nvim"},
     {"nvim-tree/nvim-web-devicons"},
-    {"javiorfo/nvim-minimaline"}
+    {"javiorfo/nvim-minimaline"},
+    {"jacoborus/tender.vim"}
 })

@@ -25,4 +25,4 @@ require('lint').linters_by_ft = {
    javascript = {"biomejs"},
 }
 
--- vim.cmd('colorscheme tokyonight-night')
+vim.cmd('colorscheme tender')
