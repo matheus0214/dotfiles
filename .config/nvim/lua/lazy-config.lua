@@ -46,5 +46,6 @@ require("lazy").setup({
     {"xiyaowong/transparent.nvim"},
     {"nvim-tree/nvim-web-devicons"},
     {"javiorfo/nvim-minimaline"},
-    {"jacoborus/tender.vim"}
+    {"jacoborus/tender.vim"},
+    {"stevedylandev/darkmatter-nvim"}
 })
