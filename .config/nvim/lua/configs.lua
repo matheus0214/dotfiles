@@ -25,4 +25,4 @@ require('lint').linters_by_ft = {
    javascript = {"biomejs"},
 }
 
-vim.cmd('colorscheme darkmatter')
+vim.cmd('colorscheme habamax')
