@@ -1,3 +1,6 @@
+[general]
+import = ["~/.config/alacritty/aura-theme.toml"]
+
 [window]
 # padding = { x = 20, y = 20 }
 # decorations = "None"
@@ -5,4 +8,5 @@ blur = true
 
 [font]
 size = 12
-normal = { family = "BlexMono Nerd Font" } 
+normal = { family = "JetBrains Mono" } 
+
