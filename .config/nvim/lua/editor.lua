@@ -12,7 +12,7 @@ vim.opt.splitright = true
 vim.opt.equalalways = false
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.opt.wrap = false
+-- vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.o.wildmenu = true
