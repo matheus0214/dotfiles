@@ -9,5 +9,5 @@ decorations = "full"
 
 [font]
 size = 13
-normal = { family = "BlexMono Nerd Font" } 
+normal = { family = "JetBrains Mono" } 
 
