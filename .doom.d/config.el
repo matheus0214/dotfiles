@@ -78,6 +78,7 @@
 ;; General configs
 
 (setq confirm-kill-emacs nil) ;; disable ask if want to quit
+(xterm-mouse-mode 1)
 
 ;; Key maps
 
