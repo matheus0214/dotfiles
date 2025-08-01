@@ -1,4 +1,5 @@
 require("mason").setup()
+require("nvim-autopairs").setup {}
 
 require("neo-tree").setup()
 
