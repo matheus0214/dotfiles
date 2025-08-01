@@ -8,7 +8,7 @@ local lspconfig = require("lspconfig")
  -- Setup Mason
 mason.setup()
 mason_lspconfig.setup({
-   ensure_installed = { "biome", "ts_ls" },
+   ensure_installed = { "biome", "ts_ls", "ols" },
 })
 -- "clangd", 
  

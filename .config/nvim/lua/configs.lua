@@ -10,13 +10,14 @@ require("conform").setup{
     auto_install = true,
     formatters_by_ft = {
         typescript = {"biome"},
-        javascript = {"biome"}
+        javascript = {"biome"},
+        odin = { "odinfmt" },
     },
     format_on_save = true
 }
 
 require("mason-null-ls").setup({
-     ensure_installed = { "biome"}
+     ensure_installed = { "biome", "odinfmt"}
 })
  
 require('lint').linters_by_ft = {
@@ -24,4 +25,4 @@ require('lint').linters_by_ft = {
    javascript = {"biomejs"},
 }
 
-vim.cmd('colorscheme habamax')
+vim.cmd('colorscheme catppuccin')
