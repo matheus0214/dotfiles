@@ -56,5 +56,11 @@ return {
                 }),
             })
         end,
-}
+    },
+    {
+        "last-partizan/onedark-wombat.nvim",
+        config = function()
+            require("onedark").setup {}
+        end
+    }
 }
