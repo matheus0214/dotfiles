@@ -15,3 +15,4 @@ setmap('n', '<leader>wh', '<C-w>h', { noremap = true, silent = true })
 setmap('n', '<leader>wj', '<C-w>j', { noremap = true, silent = true })
 setmap('n', '<leader>wk', '<C-w>k', { noremap = true, silent = true })
 
+setmap('n', '<Esc><Esc>', ':nohlsearch<CR>', { noremap = true, silent = true })
