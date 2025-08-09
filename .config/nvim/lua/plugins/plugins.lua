@@ -58,9 +58,9 @@ return {
         end,
     },
     {
-        "last-partizan/onedark-wombat.nvim",
+        "catppuccin/nvim",
         config = function()
-            require("onedark").setup {}
+            vim.cmd.colorscheme "catppuccin"
         end
     }
 }
