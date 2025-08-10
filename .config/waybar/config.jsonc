@@ -87,7 +87,7 @@
     //==> Middle Modules
     ///////////////////////////////////////////////////////////////
     "custom/cpu": {
-		"exec": "python ~/bin/system-info.py --cpu --normal-color \"#f5c2e7\" --critical-color \"#f38ba8\" | cat",
+		"exec": "python ~/.config/bin/system-info.py --cpu --normal-color \"#f5c2e7\" --critical-color \"#f38ba8\" | cat",
 		"on-click": "python ~/bin/system-info.py --cpu --click",
 		"return-type": "json",
 		"format": "{}  ",
@@ -96,7 +96,7 @@
 		"tooltip": true
 	},
 	"custom/ram": {
-		"exec": "python ~/bin/system-info.py --ram --normal-color \"#fab387\" --critical-color \"#f38ba8\" | cat",
+		"exec": "python ~/.config/bin/system-info.py --ram --normal-color \"#fab387\" --critical-color \"#f38ba8\" | cat",
 		"return-type": "json",
 		"format": "{}  ",
 		"rotate": 0,
@@ -104,8 +104,8 @@
 		"tooltip": true
 	},
 	"custom/gpu": {
-		"exec": "python ~/bin/system-info.py --gpu --normal-color \"#f5e0dc\" --critical-color \"#f38ba8\" | cat",
-		"on-click": "python ~/bin/system-info.py --gpu --click",
+		"exec": "python ~/.config/bin/system-info.py --gpu --normal-color \"#f5e0dc\" --critical-color \"#f38ba8\" | cat",
+		"on-click": "python ~/.config/bin/system-info.py --gpu --click",
 		"return-type": "json",
 		"format": "{}",
 		"rotate": 0,
@@ -148,12 +148,12 @@
         }
     },
     "custom/battery": {
-        "exec": "sh ~/bin/battery.sh --status --discharged-color \"#f38ba8\" --charged-color \"#a6e3a1\" | cat",
+        "exec": "sh ~/.config/bin/battery.sh --status --discharged-color \"#f38ba8\" --charged-color \"#a6e3a1\" | cat",
         "return-type": "raw",
 	    "format": "{}  ",
         "interval": 3,
 	    "rotate": 0,
-	    "on-click": "sh ~/bin/battery.sh --notify",
+	    "on-click": "sh ~/.config/bin/battery.sh --notify",
         "tooltip": false
     },
     "custom/brightness": {
@@ -169,26 +169,26 @@
         "tooltip": false
     },
 	"custom/volume": {
-        "exec": "sh ~/bin/volume.sh --device output --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
+        "exec": "sh ~/.config/bin/volume.sh --device output --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
         "return-type": "raw",
 	    "format": "{}  ",
         "interval": 1,
 	    "rotate": 0,
-	    "on-click": "sh ~/bin/volume.sh --device output --action toggle",
-	    "on-scroll-up": "sh ~/bin/volume.sh --device output --action increase",
-	    "on-scroll-down": "sh ~/bin/volume.sh --device output --action decrease",
+	    "on-click": "sh ~/.config/bin/volume.sh --device output --action toggle",
+	    "on-scroll-up": "sh ~/.config/bin/volume.sh --device output --action increase",
+	    "on-scroll-down": "sh ~/.config/bin/volume.sh --device output --action decrease",
 	    "scroll-step": 5,
         "tooltip": false
 	},
     "custom/microphone": {
-        "exec": "sh ~/bin/volume.sh --device input --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
+        "exec": "sh ~/.config/bin/volume.sh --device input --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
         "return-type": "raw",
 	    "format": "{}",
         "interval": 1,
 	    "rotate": 0,
-	    "on-click": "sh ~/bin/volume.sh --device input --action toggle",
-	    "on-scroll-up": "sh ~/bin/volume.sh --device input --action increase",
-	    "on-scroll-down": "sh ~/bin/volume.sh --device input --action decrease",
+	    "on-click": "sh ~/.config/bin/volume.sh --device input --action toggle",
+	    "on-scroll-up": "sh ~/.config/bin/volume.sh --device input --action increase",
+	    "on-scroll-down": "sh ~/.config/bin/volume.sh --device input --action decrease",
 	    "scroll-step": 5,
         "tooltip": false
 	},
@@ -233,16 +233,16 @@
         "tooltip": false
     },
     "custom/networkmanager": {
-        "exec": "sh ~/bin/rofi-menus/network-manager.sh --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
+        "exec": "sh ~/.config/bin/rofi-menus/network-manager.sh --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
         "return-type": "raw",
         "format": "{}  ",
         "interval": 3,
         "rotate": 0,
-        "on-click": "sh ~/bin/rofi-menus/network-manager.sh",
+        "on-click": "sh ~/.config/bin/rofi-menus/network-manager.sh",
         "tooltip": false
     },
     "custom/power": {
-        "on-click": "sh ~/bin/rofi-menus/powermenu.sh",
+        "on-click": "sh ~/.config/bin/rofi-menus/powermenu.sh",
         "format": "<span color=\"#f38ba8\"> </span>",
         "rotate": 0,
         "tooltip": false
