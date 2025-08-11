@@ -16,3 +16,7 @@ setmap('n', '<leader>wj', '<C-w>j', { noremap = true, silent = true })
 setmap('n', '<leader>wk', '<C-w>k', { noremap = true, silent = true })
 
 setmap('n', '<Esc><Esc>', ':nohlsearch<CR>', { noremap = true, silent = true })
+
+
+setmap('n', '<leader>e', '<CMD>:Neotree toggle float reveal_force_cwd<CR>', { noremap = true, silent = true })
+setmap('n', '<leader>gs', '<CMD>:Neotree toggle float git_status<CR>', { noremap = true, silent = true })
