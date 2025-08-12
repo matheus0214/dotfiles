@@ -7,9 +7,11 @@ setmap('n', '<leader>fb', telescope.buffers, { desc = 'Telescope buffers' })
 setmap('n', '<leader>fh', telescope.help_tags, { desc = 'Telescope help tags' })
 setmap('n', '<leader>s', telescope.lsp_document_symbols, { desc = 'Telescope show document symbols' })
 
+setmap("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Open diagnostic float" })
+
 setmap('n', '<leader>q', '<CMD>:quit<CR>', { desc = 'Quit' })
-setmap('n', '<leader>sv', ':vsplit<CR>', { noremap = true, silent = true })
-setmap('n', '<leader>sh', ':split<CR>', { noremap = true, silent = true })
+setmap('n', '<leader>\\', ':vsplit<CR>', { noremap = true, silent = true })
+setmap('n', '<leader>-', ':split<CR>', { noremap = true, silent = true })
 
 setmap('n', '<leader>wl', '<C-w>l', { noremap = true, silent = true })
 setmap('n', '<leader>wh', '<C-w>h', { noremap = true, silent = true })
