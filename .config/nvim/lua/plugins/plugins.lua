@@ -22,16 +22,26 @@ return {
         end,
     },
     {
-        "MeanderingProgrammer/render-markdown.nvim",
+        "nvim-treesitter/nvim-treesitter", 
+        branch = 'master', 
+        lazy = false, 
+        build = ":TSUpdate",
+        dependencies = { "OXY2DEV/markview.nvim" },
         config = function()
-            require('render-markdown').setup({})
-        end,
+            require("nvim-treesitter.configs").setup({
+                ensure_installed = {"markdown", "markdown_inline"}
+            })
+        end
     },
     {
         "hrsh7th/nvim-cmp",
         dependencies = {
-            "hrsh7th/cmp-buffer",
-            "hrsh7th/cmp-path",
+            'neovim/nvim-lspconfig',
+            'hrsh7th/cmp-nvim-lsp',
+            'hrsh7th/cmp-buffer',
+            'hrsh7th/cmp-path',
+            'hrsh7th/cmp-cmdline',
+            'hrsh7th/nvim-cmp',
         },
         event = "InsertEnter",
         config = function()
@@ -53,6 +63,7 @@ return {
                 sources = cmp.config.sources({
                     { name = "path" },
                     { name = "buffer" },
+                    { name = 'nvim_lsp' },
                 }),
             })
         end,
@@ -103,5 +114,11 @@ return {
           lspconfig.eslint.setup ({})
           lspconfig.ts_ls.setup ({})
         end
-    }
+    },
+    {
+        "OXY2DEV/bars.nvim",
+        config = function()
+            require("bars").setup({})
+        end
+    },
 }
